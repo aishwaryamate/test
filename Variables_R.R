@@ -60,13 +60,33 @@ t[4:5]
 t[c(1,5)]
 
 #List Creation
+lst <- list(10,1.2,TRUE, 'R session')
+View(lst)
+lst
 
+lst[4]
+lst[1:2]
+lst[3] <- 'Python'
+lst 
 
 #Data Frame Creation
 
+ID <- c(1,2,3,4,5)
+name <- c('A','B','C','D','E')
+age <- c(25,20,21,22,23)
+course <- c('DA','DS','DA&DS','DS','DA')
+
+id
+
+
+df <- data.frame(ID,name,age,course)
+df
+View(df)
+
 #Accessing elements from a data frame
-
-
-
-
-
+df[5,3]
+df[1,2]
+df[1,1:2]
+df[4:5,3:4]
+df[c(1,5),2:3]
+df[5,4] <- 'Digital Marketing'
